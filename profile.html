@@ -3,30 +3,40 @@
 <head>
     <meta charset="utf-8"/>
     <title>Arrow Media</title>
+    <script src="assets/libs/min/modernizr.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen">
+
 </head>
 <body>
+<div id="navbg">&nbsp;</div>
 
 <div id="page" class="container">
+
     <header>
-        <h1>Arrow Media</h1>
+        <h1><a href="index.html"><span>Arrow Media</span></a></h1>
         <nav>
+
+
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="noshow"><a href="index.html">Home</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="process.html">Process</a></li>
                 <li><a href="services">Services</a></li>
+
                 <li><a href="technology">Technology</a></li>
                 <li><a href="showcase">Showcase</a></li>
                 <li><a href="contact.html">Contact</a></li>
-
             </ul>
+
+
+
         </nav>
 
     </header>
 
     <div id="content" class="container">
 
-        <div id="slideshow ">
+        <div class="cycle-slideshow">
 
             <img src="assets/images/slideshow%20images/php-development-slide_3.jpg" alt="Arrow Media PHP Development">
             <img src="assets/images/slideshow%20images/php-development-slide_4.jpg" alt="Arrow Media PHP Development">
@@ -43,49 +53,58 @@
 </section>
 
 <section>
-<h3>The Team</h3>
+    <h3>The Team</h3>
+<section class="col-3">
 <h4>Lead Developer / Owner</h4>
 <p>Obi-Web Kenobi, has been a force within the industry for the past 14 years. He has not only promoted the Web as a business tool through projects and consultancy but engaged 100s
     of Web specialist and skilled them to take the platform to its next level.<br>
 
 With a background in electronics engineering and graphic design, Obi-Web has turned 1000s of concepts into desirable, viable and commercially successful solutions.<br>
 
-Obi-Web takes personal interest in each and every project regardless of size or complexity a true Jedi of the on-line universe.</p>
+Obi-Web takes personal interest in each and every project regardless of size or complexity a true Jedi of the on-line universe.</p></section>
 
-<h4>Quality Assurance Manager</h4>
+<section class="col-3">
+    <h4>Quality Assurance Manager</h4>
 <p>Process Leia is our project manager, she ensures that each and every project is fit for purpose and delivers all criteria laid down before being released in to the public domain.</p>
 
-<img src="assets/images/profile/fuelicon.png" alt="Quality Assurance">
-
-<h4>Battle Hardened Storm Troopers</h4>
+<img id="fav" src="assets/images/profile/fuelicon.png" alt="Quality Assurance">
+</section>
+    
+<section class="col-3"><h4>Battle Hardened Storm Troopers</h4>
 
 <p>Galactic talent spread around the universe and galaxies far far away. Our development team ensuring that every need is being met on all our projects. With direction and feedback
     from their very own Jedi mentor, our team focuses on the job in-hand and delivers.</p>
 
-<img src="assets/images/profile/nodeicon.png" alt="Development Team">
+<img id=fav" src="assets/images/profile/nodeicon.png" alt="Development Team"></section>
 </section>
 
 <section>
-    <img src="assets/images/profile/promo_1.png" alt="Philips Development">
-    <img src="assets/images/profile/promo_2.png" alt="Toyota Development">
-    <img src="assets/images/profile/promo_3.png" alt="Adidas Development">
-    <img src="assets/images/profile/promo_4.png" alt="Expedia Development">
+
+    <img class="col-4" src="assets/images/profile/promo_1.png" alt="Philips Development">
+    <img class="col-4" src="assets/images/profile/promo_2.png" alt="Toyota Development">
+    <img class="col-4" src="assets/images/profile/promo_3.png" alt="Adidas Development">
+    <img class="col-4" src="assets/images/profile/promo_4.png" alt="Expedia Development">
 
 
 </section>
 
     </div><!--End of ID=Content-->
 
-</div><!--End of ID=Page-->
 
-<footer>
-    <nav>
-    <ul>
-        <li><a href="general/faq.html">FAQ</a></li>
-        <li><a href="general/terms.html">Terms</a></li>
-    </ul>
-    </nav>
-</footer>
+</div><!--End of ID=Page-->
+<script src="assets/libs/min/jquery.min.js"></script>
+<script src="assets/js/cycle2/cycle2.js"></script>
+<script>
+    $(document).ready(function(){
+        $('p.hidden:not(:first)').hide();
+
+        $('p.thumbnail a').click(function(){
+            $('p.hidden').slideUp(2000);
+            $(this).parent().next().slideDown(2000);
+        })
+    })
+</script>
 
 </body>
+
 </html>

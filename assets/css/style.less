@@ -1,7 +1,21 @@
 @import "normalise.css";
 
+#page{
+  position: relative;
+  width: 100%;
+  left: auto;
+  right: auto;
+  margin-top: 0px;
+
+
+}
+
+.noshow {
+  display: none;
+}
+
 body{
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
 
   #navbg {
@@ -10,56 +24,250 @@ body{
     left: 0px;
     z-index: -1;
     background: #000000;
-
-    width: 4000px;
+    width: 100%;
     height: 100px;
   }
 
 
   header{
 
+    height: 236px;
+        margin-top: 0;
+
+
 
 
     h1 {
+
+      width: 200px;
+      margin: 0 auto;
+
+
       span {
         display: none;
       }
 
       a {
-        float: left;
+
         background: url("../images/arrow-media-logo.png") no-repeat center center ;
         display: block;
         width: 171px;
         height: 38px;
-
+        margin: 0 auto;
         }
 
 
       }
     nav{
 
+      width: auto;
+      margin-bottom: 5px;
+      height: 100px;
+
+
       ul{
+
         li{
+          background: #000000;
+          outline: #ffffff 1px solid;
+          width: 50%;
           float: left;
-          display: block;
+          text-align: center;
+          font-size: 16px;
+
           a{
             color: #ffffff;
+            display: block;
+            padding: 17px 0;
+            text-decoration: none;
+
           }
 
         }
       }
     }
   }
-  #page{
 
-  }
-  footer{
-    nav{
-      ul{
-        li{
+  #content {
+    padding: 0 5px;
 
-        }
+    .cycle-slideshow{
+      display: none;
+    }
+    h2 {
+
+    }
+    img{
+      width: 100%;
+
+    }
+    .image-blu{
+      background: #306d99;
+      img{
+        width: 40%;
+        min-width: 200px;
       }
     }
   }
+
+
+
+
+  footer{
+      display: block;
+      height: auto;
+      margin-top: 0;
+      margin-bottom: 5px;
+
+      nav{
+
+        width: auto;
+        margin-bottom: 5px;
+        height: 56px;
+
+
+        ul{
+
+          li{
+            background: #000000;
+            outline: #ffffff 1px solid;
+            width: 50%;
+            float: left;
+            text-align: center;
+            font-size: 16px;
+
+            a{
+              color: #ffffff;
+              display: block;
+              padding: 20px 0;
+              text-decoration: none;
+
+            }
+
+          }
+        }
+      }
+    }
+
+
+
+
+}
+
+@media (min-width: 750px) {
+
+  #page{
+    width: 750px;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+
+
+  body {
+    header{
+        height: 100px;
+
+      h1{
+        float: left;
+        margin: 0px;
+        width: 150px;
+
+        a{
+          margin: 0;
+
+        }
+      }
+        nav{
+          width: 75%;
+          float: right;
+          margin: 0;
+          height: 100px;
+          ul{
+
+            li{
+              width: 33.33%;
+            }
+          }
+
+        }
+
+    }
+    #content{
+      .cycle-slideshow{
+          display: block;
+       }
+    }
+    footer{
+      nav{
+        margin: 0 auto;
+        width: 750px;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 900px){
+  #page{
+    width: 960px;
+
+  }
+  .noshow{
+    display: block;
+  }
+
+  body {
+    header{
+      h1{
+        a{}
+      }
+      nav{
+
+        ul{
+          float: right;
+          padding: 0 5px;
+          li{
+            width: 100px;
+          }
+        }
+      }
+    }
+    #content{
+      section{
+        width: 100%;
+        .col-3{
+          width: 300px;
+          padding: 0 5px;
+          float: left;
+          h4{
+            font-weight: 600;
+          }
+          img {
+            #fav{
+
+            width: 95px;
+            margin: 50px 80px;
+            }
+          }
+        }
+      }
+
+        .col-2{
+          width: 460px;
+          padding: 0 5px;
+          float: left;
+        }
+
+
+
+        .col-4{
+          margin: 300px;
+          width: 200px;
+          padding: 0 5px;
+          float: left;
+
+      }
+    }
+  }
+
 }
