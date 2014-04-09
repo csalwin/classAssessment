@@ -32,7 +32,8 @@ body{
   header{
 
     height: 236px;
-        margin-top: 0;
+    margin-top: 0;
+
 
 
 
@@ -99,8 +100,10 @@ body{
     }
     img{
       width: 100%;
-
     }
+
+
+
     .image-blu{
       background: #306d99;
       img{
@@ -108,6 +111,31 @@ body{
         min-width: 200px;
       }
     }
+    section.col-3{
+      display: block;
+    h4{
+      width: 100%;
+    }
+
+      img.fav{
+        width: 95px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    section.col-4{
+      width: 100%;
+      padding: 0 5px;
+      float: left;
+      img{
+        width: 50%;
+        display: block;
+        float: left;
+
+      }
+
+    }
+
   }
 
 
@@ -154,7 +182,7 @@ body{
 
 }
 
-@media (min-width: 750px) {
+@media (min-width: 700px) {
 
   #page{
     width: 750px;
@@ -196,6 +224,15 @@ body{
       .cycle-slideshow{
           display: block;
        }
+      section.col-4{
+
+        width: 750px;
+        img{
+          width: 25%;
+        }
+
+
+      }
     }
     footer{
       nav{
@@ -233,38 +270,75 @@ body{
       }
     }
     #content{
-      section{
-        width: 100%;
-        .col-3{
-          width: 300px;
-          padding: 0 5px;
-          float: left;
-          h4{
-            font-weight: 600;
-          }
-          img {
-            #fav{
 
-            width: 95px;
-            margin: 50px 80px;
-            }
-          }
+
+      .col-2{
+      width: 460px;
+      padding: 0 5px;
+      float: left;
+    }
+      .col-3{
+        width: 300px;
+        padding: 0 5px;
+        float: left;
+        h4{
+          font-weight: 600;
         }
+        img{
+          margin: 0 auto;
+        }
+
+
       }
 
-        .col-2{
-          width: 460px;
-          padding: 0 5px;
-          float: left;
+      section.col-4{
+
+        width: 960px;
+
+
+
+
+      }
+
+      section{
+        width: 100%;
+        section{
+
+          img {
+
+          }
         }
 
+      }
 
 
-        .col-4{
-          margin: 300px;
-          width: 200px;
-          padding: 0 5px;
-          float: left;
+
+
+
+
+    }
+    footer{
+      float: left;
+      display: block;
+      background-color: #000000;
+
+      nav{
+        margin: 0 auto;
+        width: 960px;
+        height: 35px;
+        ul{
+          width: 320px;
+          float: right;
+
+
+        li{
+          width: 160px;
+          a{
+            padding: 10px 0;
+          }
+
+        }
+        }
 
       }
     }
