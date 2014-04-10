@@ -9,7 +9,7 @@
 
 
 </head>
-<body onload="hideItems(), showItem('gallone')">
+<body onload="hideItems('a','hidden preview')">
 <div id="navbg">&nbsp;</div>
 
 <div id="page" class="container">
@@ -48,28 +48,28 @@
             <h3>Wordpress - Content managed systems</h3>
 
 
-                <div id="showimg"><a href="../showcase/cms-wordpress" title="Showcase Wordpress System"><img src="../assets/images/showcase/showcase-8.png" alt="Wordpress Content Management"></a></div>
+                <div id="showimg"><a href="showcase/cms-wordpress" title="Showcase Wordpress System"><img src="../assets/images/showcase/showcase-8.png" alt="Wordpress Content Management"></a></div>
 
                 <div class="gallery">
-                <p class="thumbnail"><a onclick="return showItem('gallone')" href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/bon-ami-1-sml.png" alt="Wordpress Content Management"></a></p>
+                <a class="thumbnail" onclick="showItem('one')" href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/bon-ami-1-sml.png" alt="Wordpress Content Management"></a>
 
 
-                <p class="hidden preview" id="gallone"><a href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/bon-ami-1.png" alt="Wordpress Content Management"></a>
-                <h4>Bon Ami Lewes</h4></p>
+                <a class="hidden preview" id="one" href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/bon-ami-1.png" alt="Wordpress Content Management"></a>
+                <h4>Bon Ami Lewes</h4>
 
 
-                <p class="thumbnail"><a onclick="return showItem('gallone')" href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/potfolio-1-sml.png" alt="Wordpress Content Management"></a></p>
+                <a class="thumbnail" onclick="showItem('two')" href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/potfolio-1-sml.png" alt="Wordpress Content Management"></a>
 
 
-                <p class="hidden preview" id="gallone"><a href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/potfolio-1.png" alt="Wordpress Content Management"></a>
-                <h4>Potfolio</h4></p>
+                <a class="hidden preview" id="two" href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/potfolio-1.png" alt="Wordpress Content Management"></a>
+                <h4>Potfolio</h4>
 
 
-                <p class="thumbnail"><a onclick="return showItem('gallone')" href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/arrow-photo-1-sml.png" alt="Wordpress Content Management"></a></p>
+                <a class="thumbnail" onclick="showItem('three')" href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/arrow-photo-1-sml.png" alt="Wordpress Content Management"></a>
 
 
-                <p class="hidden preview" id="gallone"><a href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/arrow-photo-1.png" alt="Wordpress Content Management"></a>
-                <h4>Lisa Beaney Photography</h4></p>
+                <p><a class="hidden preview" id="three" href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/arrow-photo-1.png" alt="Wordpress Content Management"></a>
+                <h4>Lisa Beaney Photography</h4>
 
             </div>
 
@@ -83,7 +83,9 @@
 <script src="../assets/js/cycle2/cycle2.js"></script>
 <script src="../assets/js/assessmentScript/scripts.js"></script>
 <script>
-
+    /*($(document).ready(function () {
+        $('.gallery').click.showItem();
+    })*/
 </script>
 
 

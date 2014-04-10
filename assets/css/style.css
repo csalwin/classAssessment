@@ -281,10 +281,14 @@ body footer nav ul li a {
   body #content .show-col {
     width: 460px;
   }
-  body #content #gallery .thumbnail {
-    float: left;
-    display: block;
+  body #content .gallery .thumbnail img {
     width: 100px;
+  }
+  body #content .gallery .hidden .preview {
+    position: absolute;
+    top: 600px;
+    left: 250px;
+    width: 50%;
   }
   body footer {
     float: left;
