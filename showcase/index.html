@@ -3,36 +3,51 @@
 <head>
     <meta charset="utf-8"/>
     <title>Arrow Media</title>
+    <script src="../assets/libs/min/modernizr.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../assets/js/fancybox/jquery.fancybox.css">
+
+
+
+
 </head>
 <body>
+<div id="navbg">&nbsp;</div>
 
 <div id="page" class="container">
+
     <header>
-        <h1>Arrow Media</h1>
+        <h1><a href="../index.html"><span>Arrow Media</span></a></h1>
         <nav>
+
+
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li class="noshow"><a href="../index.html">Home</a></li>
                 <li><a href="../profile.html">Profile</a></li>
                 <li><a href="../process.html">Process</a></li>
                 <li><a href="../services">Services</a></li>
+
                 <li><a href="../technology">Technology</a></li>
                 <li><a href="../showcase">Showcase</a></li>
                 <li><a href="../contact.html">Contact</a></li>
-
             </ul>
+
+
+
         </nav>
 
     </header>
 
     <div id="content" class="container">
 
-        <div id="slideshow ">
+        <div class="cycle-slideshow">
 
             <img src="../assets/images/slideshow%20images/php-development-slide_6.jpg" alt="Arrow Media PHP Development">
             <img src="../assets/images/slideshow%20images/php-development-slide_2.jpg" alt="Arrow Media PHP Development">
             <img src="../assets/images/slideshow%20images/php-development-slide_3.jpg" alt="Arrow Media PHP Development">
-
         </div>
+
+
         <section>
 
 
@@ -44,24 +59,24 @@
             
             <h3>Content managed systems</h3>
                 
-            <p><a href="../showcase/cms-drupal" title="Showcase Drupal System"><img src="../assets/images/showcase/showcase-4.png" alt="Drupal Content Management"></a>
+            <a class="single_image" href="../assets/images/showcase/showcase-4.png" title="Showcase Drupal System"><img src="../assets/images/showcase/showcase-4.png" alt="Drupal Content Management" ></a>
 
-            Drupal Content Management System</p>
+            <p>Drupal Content Management System</p>
 
-            <p><a href="../showcase/cms-modx" title="Showcase Modx System"><img src="../assets/images/showcase/showcase-6.png" alt="Modx Content Management"></a>
+            <a class="single_image"  href="../assets/images/showcase/showcase-6.png" title="Showcase Modx System"><img src="../assets/images/showcase/showcase-6.png" alt="Modx Content Management"></a>
 
-            Modx Content Management System</p>
-
-            
-            <p><a href="../showcase/cms-wordpress.html" title="Showcase Wordpress System"><img src="../assets/images/showcase/showcase-8.png" alt="Wordpress Content Management"></a>
-
-
-            Wordpress Content Management System</p>
+                <p>Modx Content Management System</p>
 
             
-            <p><a href="../showcase/cms-bespoke" title="Showcase CMS Bespoke System"><img src="../assets/images/showcase/showcase-3.png" alt="Bespoke Content Management"></a>
+            <a href="../showcase/cms-wordpress.html" title="Showcase Wordpress System"><img src="../assets/images/showcase/showcase-8.png" alt="Wordpress Content Management"></a>
 
-            Bespoke Content Management System</p>
+
+                <p>Wordpress Content Management System</p>
+
+            
+            <a class="single_image"  href="../assets/images/showcase/showcase-3.png" title="Showcase CMS Bespoke System"><img src="../assets/images/showcase/showcase-3.png" alt="Bespoke Content Management"></a>
+
+                <p>Bespoke Content Management System</p>
                 
             </div>
             
@@ -70,24 +85,24 @@
             <h3>E-commerce solutions</h3>
 
             
-            <p><a href="../showcase/ecom-shopify" title="Showcase Shopify System"><img src="../assets/images/showcase/showcase-2.png" alt="Shopify"></a>
+            <a class="single_image"  href="../assets/images/showcase/showcase-2.png" title="Showcase Shopify System"><img src="../assets/images/showcase/showcase-2.png" alt="Shopify"></a>
 
-            Shopify e-Commerce Solution</p>
-
-            
-            <p><a href="../showcase/ecom-magento" title="Showcase Magento System"><img src="../assets/images/showcase/showcase-5.png" alt="Magento"></a>
-
-            Magento e-Commerce Solution</p>
+                <p>Shopify e-Commerce Solution</p>
 
             
-           <p> <a href="../showcase/ecom-oscommerce" title="Showcase OSCommerce System"><img src="../assets/images/showcase/showcase-7.png" alt="OSCommerce"></a>
+            <a class="single_image"  href="../assets/images/showcase/showcase-5.png" title="Showcase Magento System"><img src="../assets/images/showcase/showcase-5.png" alt="Magento"></a>
 
-            OSCommerce Solution</p>
+                <p>Magento e-Commerce Solution</p>
 
             
-            <p><a href="../showcase/ecom-bespoke" title="Showcase E-Commerce Bespoke System"><img src="../assets/images/showcase/showcase-1.png" alt="Bepoke System"></a>
+            <a class="single_image"  href="../assets/images/showcase/showcase-7.png" title="Showcase OSCommerce System"><img src="../assets/images/showcase/showcase-7.png" alt="OSCommerce"></a>
 
-            Bespoke e-Commerce Solution
+                <p> OSCommerce Solution</p>
+
+            
+            <a class="single_image"  href="../assets/images/showcase/showcase-1.png" title="Showcase E-Commerce Bespoke System"><img src="../assets/images/showcase/showcase-1.png" alt="Bepoke System"></a>
+
+           <p> Bespoke e-Commerce Solution
                 </p>
             </div>
 
@@ -95,17 +110,40 @@
 
         </section>
 
-    </div><!--End of ID=Content-->
+    </div><!--End of ID=Page-->
+    <script src="../assets/libs/min/jquery.min.js"></script>
+    <script src="../assets/js/cycle2/cycle2.js"></script>
+    <script src="../assets/js/fancybox/jquery.fancybox.js"></script>
+    <script>
+        $(document).ready(function() {
 
-</div><!--End of ID=Page-->
-<footer>
-    <nav>
-        <ul>
-            <li><a href="../general/faq.html">FAQ</a></li>
-            <li><a href="../general/terms.html">Terms</a></li>
-        </ul>
-    </nav>
-</footer>
+            /* This is basic - uses default settings */
+
+            $("a.single_image").fancybox();
+
+            /* Using custom settings */
+
+            $("a#inline").fancybox({
+                'hideOnContentClick': true
+            });
+
+            /* Apply fancybox to multiple items */
+
+            $("a.group").fancybox({
+                'transitionIn'	:	'elastic',
+                'transitionOut'	:	'elastic',
+                'speedIn'		:	600,
+                'speedOut'		:	200,
+                'overlayShow'	:	false
+            });
+
+        });
+    </script>
+
+
+
 
 </body>
+
+</html>
 </html>

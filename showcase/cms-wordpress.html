@@ -3,26 +3,39 @@
 <head>
     <meta charset="utf-8"/>
     <title>Arrow Media</title>
+    <script src="../assets/libs/min/modernizr.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" media="screen">
+
+
+
 </head>
 <body>
+<div id="navbg">&nbsp;</div>
 
 <div id="page" class="container">
+
     <header>
-        <h1>Arrow Media</h1>
+        <h1><a href="../index.html"><span>Arrow Media</span></a></h1>
         <nav>
+
+
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li class="noshow"><a href="../index.html">Home</a></li>
                 <li><a href="../profile.html">Profile</a></li>
                 <li><a href="../process.html">Process</a></li>
                 <li><a href="../services">Services</a></li>
+
                 <li><a href="../technology">Technology</a></li>
                 <li><a href="../showcase">Showcase</a></li>
                 <li><a href="../contact.html">Contact</a></li>
-
             </ul>
+
+
+
         </nav>
 
     </header>
+
 
     <div id="content" class="container">
 
@@ -34,44 +47,48 @@
             <h2>Showcase</h2>
             <h3>Wordpress - Content managed systems</h3>
 
-            <a href="../showcase/cms-wordpress" title="Showcase Wordpress System"><img src="../assets/images/showcase/showcase-8.png" alt="Wordpress Content Management"></a>
+
+                <div id="showimg"><a href="../showcase/cms-wordpress" title="Showcase Wordpress System"><img src="../assets/images/showcase/showcase-8.png" alt="Wordpress Content Management"></a></div>
+
+                <div class="gallery">
+                <p class="thumbnail"><a onclick="return showItem('gallone')" href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/bon-ami-1-sml.png" alt="Wordpress Content Management"></a></p>
 
 
-            <a href="../showcase/cms-wordpress" title="Showcase Wordpress System"><img src="../assets/images/showcase/bon-ami-1-sml.png" alt="Wordpress Content Management"></a>
+                <p class="hidden preview" id="gallone"><a href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/bon-ami-1.png" alt="Wordpress Content Management"></a>
+                <h4>Bon Ami Lewes</h4></p>
 
 
-            <a href="../showcase/cms-wordpress" title="Showcase Wordpress System"><img src="../assets/images/showcase/bon-ami-1.png" alt="Wordpress Content Management"></a>
-            <h4>Bon Ami Lewes</h4>
+                <p class="thumbnail"><a onclick="return showItem('gallone')" href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/potfolio-1-sml.png" alt="Wordpress Content Management"></a></p>
 
 
-            <a href="../showcase/cms-wordpress" title="Showcase Wordpress System"><img src="../assets/images/showcase/potfolio-1-sml.png" alt="Wordpress Content Management"></a>
+                <p class="hidden preview" id="gallone"><a href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/potfolio-1.png" alt="Wordpress Content Management"></a>
+                <h4>Potfolio</h4></p>
 
 
-            <a href="../showcase/cms-wordpress" title="Showcase Wordpress System"><img src="../assets/images/showcase/potfolio-1.png" alt="Wordpress Content Management"></a>
-            <h4>Potfolio</h4>
+                <p class="thumbnail"><a onclick="return showItem('gallone')" href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/arrow-photo-1-sml.png" alt="Wordpress Content Management"></a></p>
 
 
-            <a href="../showcase/cms-wordpress" title="Showcase Wordpress System"><img src="../assets/images/showcase/arrow-photo-1-sml.png" alt="Wordpress Content Management"></a>
+                <p class="hidden preview" id="gallone"><a href="#" title="Showcase Wordpress System"><img src="../assets/images/showcase/arrow-photo-1.png" alt="Wordpress Content Management"></a>
+                <h4>Lisa Beaney Photography</h4></p>
 
-
-            <a href="../showcase/cms-wordpress" title="Showcase Wordpress System"><img src="../assets/images/showcase/arrow-photo-1.png" alt="Wordpress Content Management"></a>
-            <h4>Lisa Beaney Photography</h4>
-
-
+            </div>
 
         </section>
 
     </div><!--End of ID=Content-->
 
+
 </div><!--End of ID=Page-->
-<footer>
-    <nav>
-        <ul>
-            <li><a href="../general/faq.html">FAQ</a></li>
-            <li><a href="../general/terms.html">Terms</a></li>
-        </ul>
-    </nav>
-</footer>
+<script src="../assets/libs/min/jquery.min.js"></script>
+<script src="../assets/js/cycle2/cycle2.js"></script>
+<script src="../assets/js/assessmentScript/scripts.js"></script>
+<script>
+    $(document).ready(function() {
+        $
+    }
+</script>
+
 
 </body>
+
 </html>

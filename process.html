@@ -3,30 +3,40 @@
 <head>
     <meta charset="utf-8"/>
     <title>Arrow Media</title>
+    <script src="assets/libs/min/modernizr.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen">
+
 </head>
 <body>
+<div id="navbg">&nbsp;</div>
 
 <div id="page" class="container">
+
     <header>
-        <h1>Arrow Media</h1>
+        <h1><a href="index.html"><span>Arrow Media</span></a></h1>
         <nav>
+
+
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="noshow"><a href="index.html">Home</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="process.html">Process</a></li>
                 <li><a href="services">Services</a></li>
+
                 <li><a href="technology">Technology</a></li>
                 <li><a href="showcase">Showcase</a></li>
                 <li><a href="contact.html">Contact</a></li>
-
             </ul>
+
+
+
         </nav>
 
     </header>
 
     <div id="content" class="container">
 
-        <div id="slideshow ">
+        <div class="cycle-slideshow">
 
             <img src="assets/images/slideshow%20images/php-development-slide_4.jpg" alt="Arrow Media PHP Development">
             <img src="assets/images/slideshow%20images/php-development-slide_5.jpg" alt="Arrow Media PHP Development">
@@ -44,50 +54,65 @@
             <p>Using full-cycle development means everyone takes responsibility for the project. Starting with idea elaboration, system specifications and user experience design
             we follow the latest industry standards and practices to guarantee that our clients get something unique and effective. Something that grows their business and brings it to a whole new level.</p>
 
-<h3>Agile</h3>
+<section class="col-4"><h3>Agile</h3>
             <p>We utilise Agile methodologies to optimise team efficiency to ensure communication, staffing, resource assignment and reporting are all completed effectively.</p>
 
             <img src="assets/images/profile/promo_5.png" alt="Expedia Development">
             <img src="assets/images/profile/promo_6.png" alt="Expedia Development">
             <img src="assets/images/profile/promo_8.png" alt="Expedia Development">
-
-<h3>Continuous Integration</h3>
+</section>
+<section class="col-4"><h3>Continuous Integration</h3>
             <p>Modern applications and software needs updating and tweaking to adapt to the ever changing environment. Because integration takes place so frequently, in continuous
-            integration there is significantly less back-tracking to discover where things went wrong, so you can spend more time building features.<br>
+            integration there is significantly less back-tracking to discover where things went wrong, so you can spend more time building features.</p>
 
-            If we didn't follow a continuous approach, we would have longer periods between integrations this would make it exponentially more difficult to find and fix problems.
-            Such integration problems can easily knock a project off-schedule, or cause it to fail altogether.</p>
+            <p>If we didn't follow a continuous approach, we would have longer periods between integrations this would make it exponentially more difficult to find and fix problems.
+            Such integration problems can easily knock a project off-schedule, or cause it to fail altogether.</p></section>
 
-<h3>Quality Assurance</h3>
+<section class="col-4"><h3>Quality Assurance</h3>
             <p>Our Quality Assurance team carries out intense tests on each project from the beginning to ensure that the solution works smoothly, looks simple yet intuitively
             meets all the specified and agreed requirements.</p>
 
             <img src="assets/images/profile/promo_9.png" alt="Expedia Development">
-            <img src="assets/images/profile/promo_10.png" alt="Expedia Development">
+            <img src="assets/images/profile/promo_10.png" alt="Expedia Development"></section>
 
-<h3>Multi-level Support</h3>
+<section class="col-4"><h3>Multi-level Support</h3>
             <p>Our support services include consulting, defect analysis, trouble-shooting, bug fixing, application administration, regular backups, system availability
             monitoring and others; we can even work with your customers directly.</p>
 
             <img src="assets/images/profile/promo_11.png" alt="Expedia Development">
             <img src="assets/images/profile/promo_12.png" alt="Expedia Development">
 
-
+</section>
 
 
         </section>
 
     </div><!--End of ID=Content-->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="general/faq.html">FAQ</a></li>
+                <li><a href="general/terms.html">Terms</a></li>
+            </ul>
+        </nav>
+    </footer>
 
 </div><!--End of ID=Page-->
-<footer>
-    <nav>
-        <ul>
-            <li><a href="general/faq.html">FAQ</a></li>
-            <li><a href="general/terms.html">Terms</a></li>
-        </ul>
-    </nav>
-</footer>
+
+
+<script src="assets/libs/min/jquery.min.js"></script>
+<script src="assets/js/cycle2/cycle2.js"></script>
+<script>
+    $(document).ready(function(){
+        $('p.hidden:not(:first)').hide();
+
+        $('p.thumbnail a').click(function(){
+            $('p.hidden').slideUp(2000);
+            $(this).parent().next().slideDown(2000);
+        })
+    })
+</script>
 
 </body>
+
 </html>

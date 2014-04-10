@@ -75,26 +75,63 @@ body #content .image-blu img {
   width: 40%;
   min-width: 200px;
 }
-body #content section.col-3 {
+body #content .col-3 {
   display: block;
 }
-body #content section.col-3 h4 {
+body #content .col-3 ul {
+  width: 100%;
+  margin-left: 10%;
+  padding: 0 auto;
+}
+body #content .col-3 h4 {
   width: 100%;
 }
-body #content section.col-3 img.fav {
+body #content .col-3 img.fav {
   width: 95px;
   display: block;
   margin: 0 auto;
 }
-body #content section.col-4 {
+body #content section.col-4foot {
   width: 100%;
   padding: 0 5px;
   float: left;
 }
-body #content section.col-4 img {
+body #content section.col-4foot img {
   width: 50%;
   display: block;
   float: left;
+}
+body #content section.col-4 {
+  width: 100%;
+  padding: 0 10px;
+  float: left;
+}
+body #content section.col-4 img {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+body #content section.col-6foot {
+  width: 100%;
+  padding: 0 5px;
+  float: left;
+}
+body #content section.col-6foot img {
+  width: 15%;
+  display: block;
+  float: left;
+}
+body #content #serviceimg {
+  width: 300px;
+  margin: 20px auto;
+}
+body #content .show-col {
+  width: 50%;
+  margin: 0 auto;
+}
+body #content #showimg {
+  width: 80%;
+  margin: 0 auto;
 }
 body footer {
   display: block;
@@ -150,11 +187,32 @@ body footer nav ul li a {
   body #content .cycle-slideshow {
     display: block;
   }
-  body #content section.col-4 {
+  body #content section.col-4foot {
     width: 750px;
   }
+  body #content section.col-4foot img {
+    width: 185px;
+  }
+  body #content section.col-4 {
+    width: 700px;
+    padding: 0 25px;
+  }
   body #content section.col-4 img {
-    width: 25%;
+    width: 238px;
+    margin: 0 231px;
+  }
+  body #content section.col-6foot {
+    width: 750px;
+    margin: 0 auto;
+    padding: 0 75px;
+  }
+  body #content section.col-6foot img {
+    width: 100px;
+  }
+  body #content .show-col {
+    width: 355px;
+    padding: 0 5px;
+    float: left;
   }
   body footer nav {
     margin: 0 auto;
@@ -181,9 +239,13 @@ body footer nav ul li a {
     float: left;
   }
   body #content .col-3 {
-    width: 300px;
-    padding: 0 5px;
+    width: 290px;
+    padding: 0 10px;
     float: left;
+  }
+  body #content .col-3 ul {
+    margin: 0;
+    padding: 0 10px;
   }
   body #content .col-3 h4 {
     font-weight: 600;
@@ -191,11 +253,38 @@ body footer nav ul li a {
   body #content .col-3 img {
     margin: 0 auto;
   }
-  body #content section.col-4 {
+  body #content section.col-4foot {
     width: 960px;
+  }
+  body #content section.col-4foot img {
+    width: 25%;
+  }
+  body #content section.col-4 {
+    width: 200px;
+    padding: 0 5px;
+  }
+  body #content section.col-4 img {
+    width: 100%;
+    margin: 0 auto;
   }
   body #content section {
     width: 100%;
+  }
+  body #content section.col-6foot {
+    width: 870px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+  body #content section.col-6foot img {
+    width: 120px;
+  }
+  body #content .show-col {
+    width: 460px;
+  }
+  body #content #gallery .thumbnail {
+    float: left;
+    display: block;
+    width: 100px;
   }
   body footer {
     float: left;
