@@ -146,7 +146,6 @@ body #content .gallery {
   width: 500px;
   height: 500px;
   margin: 5px 10px;
-  border: #000000 solid 2px;
 }
 body #content .gallery .thumbnail {
   display: block;
@@ -284,7 +283,6 @@ body footer nav ul li a {
     width: 100%;
     height: 500px;
     margin: 10px 30px;
-    border: #000000 solid 2px;
   }
   body #content .gallery .thumbnail {
     display: block;
@@ -374,7 +372,6 @@ body footer nav ul li a {
     width: 100%;
     height: 500px;
     margin: 10px 30px;
-    border: #000000 solid 2px;
   }
   body #content .gallery .thumbnail {
     display: block;
