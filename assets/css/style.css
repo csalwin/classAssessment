@@ -1,4 +1,5 @@
 @import "normalise.css";
+/*set the width for the page*/
 #page {
   position: relative;
   width: 100%;
@@ -6,12 +7,14 @@
   right: auto;
   margin-top: 0px;
 }
+/*remove the home button in the tablet and mobile view*/
 .noshow {
   display: none;
 }
 body {
   width: 100%;
   margin: 0 auto;
+  /*navigation background */
 }
 body #navbg {
   position: absolute;
@@ -29,6 +32,7 @@ body header {
 body header h1 {
   width: 200px;
   margin: 0 auto;
+  /*put the logo in with css*/
 }
 body header h1 span {
   display: none;
@@ -61,6 +65,12 @@ body header nav ul li a {
 }
 body #content {
   padding: 0 5px;
+  /*background for the transparent imges*/
+  /*i'm using a column system*/
+  /*for the log images at the bottom of the page*/
+  /*showcase gallery styling*/
+  /*contact form styling*/
+  /*submit button*/
 }
 body #content .cycle-slideshow {
   display: none;
@@ -81,7 +91,6 @@ body #content .col-3 {
 body #content .col-3 ul {
   width: 100%;
   margin-left: 10%;
-  padding: 0 auto;
 }
 body #content .col-3 h4 {
   width: 100%;
@@ -130,8 +139,54 @@ body #content .show-col {
   margin: 0 auto;
 }
 body #content #showimg {
-  width: 80%;
+  width: 400px;
   margin: 0 auto;
+}
+body #content .gallery {
+  width: 500px;
+  height: 500px;
+  margin: 5px 10px;
+  border: #000000 solid 2px;
+}
+body #content .gallery .thumbnail {
+  display: block;
+  float: left;
+  width: 33%;
+  margin: 40px 0px;
+}
+body #content .gallery .thumbnail img {
+  width: 100px;
+  margin: 0 0 0 20px;
+}
+body #content .gallery .hidden.preview {
+  position: absolute;
+  top: 700px;
+  left: 40px;
+  float: right;
+  width: 450px;
+}
+body #content input,
+body #content textarea {
+  padding: 10px;
+  border: 1px solid #E5E5E5;
+  width: 200px;
+  color: #999999;
+}
+body #content textarea {
+  width: 400px;
+  height: 150px;
+  max-width: 400px;
+  line-height: 18px;
+}
+body #content .form label {
+  margin-left: 10px;
+  color: #999999;
+}
+body #content .submit input {
+  width: 100px;
+  height: 40px;
+  background-color: #306d99;
+  color: #FFF;
 }
 body footer {
   display: block;
@@ -158,6 +213,7 @@ body footer nav ul li a {
   padding: 20px 0;
   text-decoration: none;
 }
+/*for tablet users*/
 @media (min-width: 700px) {
   #page {
     width: 750px;
@@ -183,6 +239,10 @@ body footer nav ul li a {
   }
   body header nav ul li {
     width: 33.33%;
+  }
+  body #content {
+    /*individual list on the service page */
+    /*gallery styling */
   }
   body #content .cycle-slideshow {
     display: block;
@@ -214,12 +274,41 @@ body footer nav ul li a {
     padding: 0 5px;
     float: left;
   }
+  body #content #servicelist {
+    float: left;
+  }
+  body #content #servicelist ul {
+    margin-left: 0;
+  }
+  body #content .gallery {
+    width: 100%;
+    height: 500px;
+    margin: 10px 30px;
+    border: #000000 solid 2px;
+  }
+  body #content .gallery .thumbnail {
+    display: block;
+    width: 750px;
+    float: inherit;
+  }
+  body #content .gallery .thumbnail img {
+    width: 100px;
+    margin: 20px 30px;
+  }
+  body #content .gallery .hidden.preview {
+    position: absolute;
+    top: 480px;
+    left: 220px;
+    float: right;
+    width: 500px;
+  }
   body footer nav {
     margin: 0 auto;
     width: 750px;
   }
 }
-@media (min-width: 900px) {
+/*for desktop users*/
+@media (min-width: 960px) {
   #page {
     width: 960px;
   }
@@ -281,14 +370,27 @@ body footer nav ul li a {
   body #content .show-col {
     width: 460px;
   }
+  body #content .gallery {
+    width: 100%;
+    height: 500px;
+    margin: 10px 30px;
+    border: #000000 solid 2px;
+  }
+  body #content .gallery .thumbnail {
+    display: block;
+    width: 960px;
+    margin: 0px 0px;
+  }
   body #content .gallery .thumbnail img {
     width: 100px;
+    margin: 40px 30px;
   }
-  body #content .gallery .hidden .preview {
+  body #content .gallery .hidden.preview {
     position: absolute;
-    top: 600px;
-    left: 250px;
-    width: 50%;
+    top: 450px;
+    left: 320px;
+    float: right;
+    width: 600px;
   }
   body footer {
     float: left;

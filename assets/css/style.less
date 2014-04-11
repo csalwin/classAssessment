@@ -1,5 +1,6 @@
 @import "normalise.css";
 
+/*set the width for the page*/
 #page{
   position: relative;
   width: 100%;
@@ -9,7 +10,7 @@
 
 
 }
-
+/*remove the home button in the tablet and mobile view*/
 .noshow {
   display: none;
 }
@@ -18,6 +19,7 @@ body{
   width: 100%;
   margin: 0 auto;
 
+/*navigation background */
   #navbg {
     position: absolute;
     top: 0px;
@@ -48,6 +50,7 @@ body{
         display: none;
       }
 
+      /*put the logo in with css*/
       a {
 
         background: url("../images/arrow-media-logo.png") no-repeat center center ;
@@ -102,7 +105,7 @@ body{
       width: 100%;
     }
 
-
+/*background for the transparent imges*/
 
     .image-blu{
       background: #306d99;
@@ -111,12 +114,14 @@ body{
         min-width: 200px;
       }
     }
+
+    /*i'm using a column system*/
     .col-3{
       display: block;
       ul{
       width: 100%;
       margin-left: 10%;
-      padding: 0 auto;
+
       }
     h4{
       width: 100%;
@@ -151,6 +156,8 @@ body{
         }
       }
 
+
+    /*for the log images at the bottom of the page*/
     section.col-6foot{
       width: 100%;
       padding: 0 5px;
@@ -176,8 +183,78 @@ body{
     }
 
     #showimg{
-      width: 80%;
+      width: 400px;
       margin: 0 auto;
+    }
+
+    /*showcase gallery styling*/
+
+    .gallery{
+      width: 500px;
+      height: 500px;
+      margin: 5px 10px;
+      border: #000000 solid 2px;
+
+      .thumbnail{
+        display: block;
+        float: left;
+        width: 33%;
+        margin: 40px 0px;
+        img{
+          width: 100px;
+          margin: 0 0 0 20px;
+
+
+        }}
+
+
+      .hidden.preview{
+        position: absolute;
+        top: 700px;
+        left: 40px;
+        float: right;
+        width: 450px;
+
+      }
+
+
+
+    }
+
+    /*contact form styling*/
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #E5E5E5;
+      width: 200px;
+      color: #999999;
+
+    }
+
+    textarea {
+      width: 400px;
+      height: 150px;
+      max-width: 400px;
+      line-height: 18px;
+    }
+
+
+
+
+
+    .form label {
+      margin-left: 10px;
+      color: #999999;
+    }
+
+    /*submit button*/
+
+    .submit input {
+      width: 100px;
+      height: 40px;
+      background-color: #306d99;
+      color: #FFF;
+
     }
 
 
@@ -227,6 +304,8 @@ body{
 
 
 }
+
+/*for tablet users*/
 
 @media (min-width: 700px) {
 
@@ -310,6 +389,47 @@ body{
         
       }
 
+      /*individual list on the service page */
+      #servicelist{
+
+        float: left;
+        ul{
+        margin-left: 0;
+
+        }
+      }
+
+      /*gallery styling */
+      .gallery{
+        width: 100%;
+        height: 500px;
+        margin: 10px 30px;
+        border: #000000 solid 2px;
+
+        .thumbnail{
+          display: block;
+          width: 750px;
+          float: inherit;
+          img{
+            width: 100px;
+            margin: 20px 30px;
+
+          }}
+
+
+        .hidden.preview{
+          position: absolute;
+          top: 480px;
+          left: 220px;
+          float: right;
+          width: 500px;
+
+        }
+
+
+
+      }
+
 
 
     }
@@ -323,7 +443,10 @@ body{
 
 }
 
-@media (min-width: 900px){
+
+/*for desktop users*/
+
+@media (min-width: 960px){
   #page{
     width: 960px;
 
@@ -415,18 +538,29 @@ body{
       }
 
       .gallery{
+        width: 100%;
+        height: 500px;
+        margin: 10px 30px;
+        border: #000000 solid 2px;
 
-        .thumbnail img{
+        .thumbnail{
+          display: block;
+          width: 960px;
+          margin: 0px 0px;
+        img{
           width: 100px;
+          margin: 40px 30px;
 
-        }
+        }}
 
-        .hidden .preview{
 
+        .hidden.preview{
           position: absolute;
-          top: 600px;
-          left: 250px;
-          width: 50%;
+          top: 450px;
+          left: 320px;
+          float: right;
+          width: 600px;
+
         }
 
 

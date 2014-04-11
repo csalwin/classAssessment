@@ -8,7 +8,7 @@ showItem = function(currId) {
   if (oldElement) {
     oldElement.display = 'none';
   }
-  currElement = 'block';
+  currElement.display = 'block';
   oldElement = currElement;
   return false;
 };
